@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="css/style.css">
+    <style type="text/css">
+
+}
+</style>
+</head>
+<body>
+    <div>
+         {{>navbar}}
+    </div>
+    <div class="container-fluid div-color">
+<div class="row">
+<div class="col-md-4 offset-md-4">
+<div class="card mt-4">
+<div class="card-header text-center bg-custom text-white">
+  <i class="fa fa-user-plus fa-3x  " aria-hidden="true"></i>
+  <h4>Registratoin</h4>
+  </div>
+  
+   
+ 
+
+<div class="card-body">
+<form action="/regdata" method="post">
+ <div class="form-group">
+     <label>Enter Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+    
+  </div>
+  
+  <div class="form-group">
+     <label>Enter Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    
+  </div>
+
+  <div class="form-group">
+     <label>Enter Phone number</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Enter Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+  </div>
+
+  <div class="form-group">
+     <label>Conform Password</label>
+    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="conformpassword">
+    
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary badge-pill btn-block">Register</button>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+ <div>
+        {{>foter}}
+    </div>
+    
+</body>
+</html>
